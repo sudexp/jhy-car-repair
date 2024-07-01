@@ -6,6 +6,21 @@ export default {
 	},
 	plugins: [require('daisyui')], // eslint-disable-line @typescript-eslint/no-require-imports
 	daisyui: {
-		themes: []
+		themes: [
+			{
+				custom: {
+					// red
+					primary: '#d90429', // dark
+					secondary: '#ef233c', // light
+					// typography
+					neutral: '#edf2f4', // light
+					accent: '#141414', // dark
+					// backgrounds
+					'base-100': '#edf2f4', // light
+					'base-200': '#8d99ae', // middle
+					'base-300': '#2b2d42' // dark
+				}
+			}
+		]
 	}
 };
