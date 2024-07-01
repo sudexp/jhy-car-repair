@@ -2,7 +2,13 @@
 export default {
 	content: ['./src/**/*.{html,svelte,js,ts}'],
 	theme: {
-		extend: {}
+		extend: {},
+		screens: {
+			sm: '620px',
+			md: '900px',
+			lg: '1200px',
+			xl: '1536px'
+		}
 	},
 	plugins: [require('daisyui')], // eslint-disable-line @typescript-eslint/no-require-imports
 	daisyui: {
