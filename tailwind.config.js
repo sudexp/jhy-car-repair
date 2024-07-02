@@ -2,7 +2,55 @@
 export default {
 	content: ['./src/**/*.{html,svelte,js,ts}'],
 	theme: {
-		extend: {},
+		fontFamily: {
+			sans: ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+		},
+		fontSize: {
+			sm: '14px',
+			base: '16px',
+			xl: '20px',
+			'2xl': '22px'
+		},
+		extend: {
+			typography: {
+				DEFAULT: {
+					css: {
+						fontSize: '14px',
+						h1: {
+							fontSize: '36px',
+							fontWeight: 400,
+							lineHeight: '42px',
+							margin: 0
+						},
+						h2: {
+							fontSize: '24px',
+							fontWeight: 400,
+							lineHeight: '30px',
+							margin: 0
+						},
+						p: {
+							fontSize: '20px',
+							margin: 0
+						}
+					}
+				},
+				md: {
+					css: {
+						h1: {
+							fontSize: '64px',
+							lineHeight: '70px'
+						},
+						h2: {
+							fontSize: '32px',
+							lineHeight: '38px'
+						},
+						p: {
+							fontSize: '22px'
+						}
+					}
+				}
+			}
+		},
 		screens: {
 			// xs: '0px',
 			sm: '620px',
