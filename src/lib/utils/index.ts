@@ -7,3 +7,7 @@ export const navItems = [
 export const getIsRootPath = (pathname: string) => {
 	return pathname === '/';
 };
+
+export const getFooterBgColor = (isRootPath: boolean) => {
+	return isRootPath ? 'transparent' : 'base-200';
+};

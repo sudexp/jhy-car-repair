@@ -2,11 +2,12 @@
 	import Logo from './logo.svelte';
 	import FooterTitle from './footertitle.svelte';
 	import Footerlink from './footerlink.svelte';
+	import { getFooterBgColor } from '$lib/utils';
 
 	export let isRootPath;
 </script>
 
-<footer class="flex-shrink-0 sm:grid columns-template bg-base-200 p-8">
+<footer class="flex-shrink-0 sm:grid columns-template bg-{getFooterBgColor(isRootPath)} p-8">
 	<aside class="mb-4 sm:mb-0"><Logo {isRootPath} /></aside>
 	<div class="sm:justify-self-end">
 		<div class="grid columns-template gap-x-8 gap-y-2">
