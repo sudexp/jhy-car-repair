@@ -31,7 +31,7 @@
 			<div class="hidden flex-none sm:block">
 				<ul class="menu menu-horizontal">
 					{#each navItems as item}
-						<Navlink href={item.href}>{item.name}</Navlink>
+						<Navlink {isRootPath} href={item.href}>{item.name}</Navlink>
 					{/each}
 				</ul>
 			</div>

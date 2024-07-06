@@ -17,3 +17,11 @@ export const getLayoutBgStyle = (isRootPath: boolean, bgImage: string): string =
 		? `background-image: url(${bgImage}); background-size: cover; background-position: center`
 		: '';
 };
+
+export const getNavlinkColor = (isRootPath: boolean | undefined) => {
+	if (isRootPath === undefined) {
+		return 'text-accent';
+	}
+
+	return isRootPath ? 'text-neutral' : 'text-secondary';
+};
