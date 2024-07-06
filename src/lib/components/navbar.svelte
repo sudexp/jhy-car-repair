@@ -9,7 +9,7 @@
 <div class="drawer">
 	<input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content flex flex-col">
-		<div class="navbar w-full">
+		<div class="navbar w-full p-0">
 			<div class="flex-none sm:hidden">
 				<label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
 					<svg
