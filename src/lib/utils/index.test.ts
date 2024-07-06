@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getIsRootPath, getFooterBgColor, getStyle } from '.';
+import { getIsRootPath, getFooterBgColor, getLayoutBgStyle } from '.';
 
 describe('getIsRootPath', () => {
 	it('should return true when pathname is exactly "/"', () => {
@@ -31,16 +31,16 @@ describe('getFooterBgColor', () => {
 	});
 });
 
-describe('getStyle', () => {
+describe('getLayoutBgStyle', () => {
 	it('should return a valid CSS background-image style when isRootPath is true', () => {
-		const result = getStyle(true, 'https://example.com/image.jpg');
+		const result = getLayoutBgStyle(true, 'https://example.com/image.jpg');
 		expect(result).toBe(
 			'background-image: url(https://example.com/image.jpg); background-size: cover; background-position: center'
 		);
 	});
 
 	it('should return an empty string when isRootPath is false', () => {
-		const result = getStyle(false, 'https://example.com/image.jpg');
+		const result = getLayoutBgStyle(false, 'https://example.com/image.jpg');
 		expect(result).toBe('');
 	});
 });
