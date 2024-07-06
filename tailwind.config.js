@@ -29,7 +29,6 @@ export default {
 							margin: 0
 						},
 						p: {
-							fontSize: '20px',
 							margin: 0
 						}
 					}
@@ -43,9 +42,6 @@ export default {
 						h2: {
 							fontSize: '32px',
 							lineHeight: '38px'
-						},
-						p: {
-							fontSize: '22px'
 						}
 					}
 				}
