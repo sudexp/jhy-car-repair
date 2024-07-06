@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getIsRootPath, getFooterBgColor } from '.';
+import { getIsRootPath, getFooterBgColor, getStyle } from '.';
 
 describe('getIsRootPath', () => {
 	it('should return true when pathname is exactly "/"', () => {
@@ -28,5 +28,17 @@ describe('getFooterBgColor', () => {
 
 	it('should return dark grey color if isRootPath is false', () => {
 		expect(getFooterBgColor(false)).toBe('base-200');
+	});
+});
+
+describe('getStyle', () => {
+	it('should return a valid CSS background-image style when isRootPath is true', () => {
+		const result = getStyle(true, 'https://example.com/image.jpg');
+		expect(result).toBe('background-image: url(https://example.com/image.jpg)');
+	});
+
+	it('should return an empty string when isRootPath is false', () => {
+		const result = getStyle(false, 'https://example.com/image.jpg');
+		expect(result).toBe('');
 	});
 });
