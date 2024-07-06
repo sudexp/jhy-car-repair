@@ -5,14 +5,14 @@
 	import Navbar from '$lib/components/navbar.svelte';
 	import Footer from '$lib/components/footer.svelte';
 	import bgImage from '$lib/jpg/bgImage.avif';
-	import { getIsRootPath } from '$lib/utils';
+	import { getIsRootPath, getStyle } from '$lib/utils';
 
 	let isRootPath;
 
 	$: isRootPath = getIsRootPath($page.url.pathname);
 </script>
 
-<div class="flex flex-col min-h-screen" style="background-image: url({bgImage})">
+<div class="flex flex-col min-h-screen" style={getStyle(isRootPath, bgImage)}>
 	<Navbar {isRootPath} />
 	<main class="flex-grow">
 		<slot />
