@@ -34,7 +34,9 @@ describe('getFooterBgColor', () => {
 describe('getStyle', () => {
 	it('should return a valid CSS background-image style when isRootPath is true', () => {
 		const result = getStyle(true, 'https://example.com/image.jpg');
-		expect(result).toBe('background-image: url(https://example.com/image.jpg)');
+		expect(result).toBe(
+			'background-image: url(https://example.com/image.jpg); background-size: cover; background-position: center'
+		);
 	});
 
 	it('should return an empty string when isRootPath is false', () => {
