@@ -1,11 +1,7 @@
 <script>
-	import { page } from '$app/stores';
 	import LogoSvg from '$lib/svg/logoImage.svelte';
-	import { getIsRootPath } from '../utils';
 
-	let isRootPath;
-
-	$: isRootPath = getIsRootPath($page.url.pathname);
+	export let isRootPath;
 </script>
 
 {#if isRootPath}

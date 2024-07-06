@@ -2,6 +2,8 @@
 	import { navItems } from '../utils';
 	import Logo from './logo.svelte';
 	import Navlink from './navlink.svelte';
+
+	export let isRootPath;
 </script>
 
 <div class="drawer">
@@ -25,7 +27,7 @@
 					</svg>
 				</label>
 			</div>
-			<div class="hidden mx-2 flex-1 px-2 sm:block"><Logo /></div>
+			<div class="hidden mx-2 flex-1 px-2 sm:block"><Logo {isRootPath} /></div>
 			<div class="hidden flex-none sm:block">
 				<ul class="menu menu-horizontal">
 					{#each navItems as item}
@@ -38,7 +40,7 @@
 	<div class="drawer-side">
 		<label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay" />
 		<div class="menu bg-base-100 min-h-full w-80 p-0">
-			<Logo />
+			<Logo {isRootPath} />
 			<ul class="p-4 m-0">
 				{#each navItems as item}
 					<Navlink href={item.href}>{item.name}</Navlink>
