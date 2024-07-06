@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getIsRootPath, getFooterBgColor, getLayoutBgStyle } from '.';
+import { getIsRootPath, getFooterBgColor, getLayoutBgStyle, getNavlinkColor } from '.';
 
 describe('getIsRootPath', () => {
 	it('should return true when pathname is exactly "/"', () => {
@@ -42,5 +42,22 @@ describe('getLayoutBgStyle', () => {
 	it('should return an empty string when isRootPath is false', () => {
 		const result = getLayoutBgStyle(false, 'https://example.com/image.jpg');
 		expect(result).toBe('');
+	});
+});
+
+describe('getNavlinkColor', () => {
+	it('should return "text-accent" when isRootPath is undefined', () => {
+		const result = getNavlinkColor(undefined);
+		expect(result).toBe('text-accent');
+	});
+
+	it('should return "text-neutral" when isRootPath is true', () => {
+		const result = getNavlinkColor(true);
+		expect(result).toBe('text-neutral');
+	});
+
+	it('should return "text-secondary" when isRootPath is false', () => {
+		const result = getNavlinkColor(false);
+		expect(result).toBe('text-secondary');
 	});
 });

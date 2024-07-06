@@ -18,7 +18,9 @@ export const getLayoutBgStyle = (isRootPath: boolean, bgImage: string): string =
 		: '';
 };
 
-export const getNavlinkColor = (isRootPath: boolean | undefined) => {
+export const getNavlinkColor = (
+	isRootPath: boolean | undefined
+): 'text-accent' | 'text-neutral' | 'text-secondary' => {
 	if (isRootPath === undefined) {
 		return 'text-accent';
 	}
