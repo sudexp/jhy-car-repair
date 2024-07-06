@@ -5,7 +5,7 @@
 </script>
 
 <footer class="sm:grid columns-template bg-base-200 p-8">
-	<aside><Logo /></aside>
+	<aside class="mb-4 sm:mb-0"><Logo /></aside>
 	<div class="sm:justify-self-end">
 		<div class="grid columns-template gap-x-8 gap-y-2">
 			<FooterTitle>Osoite:</FooterTitle>
