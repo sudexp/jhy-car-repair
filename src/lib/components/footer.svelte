@@ -4,7 +4,7 @@
 	import Footerlink from './footerlink.svelte';
 </script>
 
-<footer class="sm:grid columns-template bg-base-200 p-8">
+<footer class="flex-shrink-0 sm:grid columns-template bg-base-200 p-8">
 	<aside class="mb-4 sm:mb-0"><Logo /></aside>
 	<div class="sm:justify-self-end">
 		<div class="grid columns-template gap-x-8 gap-y-2">
