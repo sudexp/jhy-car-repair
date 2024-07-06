@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getIsRootPath } from './utils';
+import { getIsRootPath } from '.';
 
 describe('getIsRootPath', () => {
 	it('should return true when pathname is exactly "/"', () => {

@@ -1,5 +1,5 @@
 <script>
-	import { navItems } from './utils';
+	import { navItems } from '../utils';
 	import Logo from './logo.svelte';
 	import Navlink from './navlink.svelte';
 </script>

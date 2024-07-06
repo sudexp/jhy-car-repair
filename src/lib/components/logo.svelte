@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import LogoSvg from '$lib/svg/logoImage.svelte';
-	import { getIsRootPath } from './utils';
+	import { getIsRootPath } from '../utils';
 
 	let isRootPath;
 
