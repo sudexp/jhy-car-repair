@@ -29,7 +29,7 @@
 			<div class="hidden flex-none sm:block">
 				<ul class="menu menu-horizontal">
 					{#each navItems as item}
-						<Navlink link={item.name} href={item.href} />
+						<Navlink href={item.href}>{item.name}</Navlink>
 					{/each}
 				</ul>
 			</div>
@@ -41,7 +41,7 @@
 			<Logo />
 			<ul class="p-4 m-0">
 				{#each navItems as item}
-					<Navlink link={item.name} href={item.href} />
+					<Navlink href={item.href}>{item.name}</Navlink>
 				{/each}
 			</ul>
 		</div>
