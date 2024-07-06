@@ -5,6 +5,6 @@
 	export let href;
 </script>
 
-<li>
+<li class="p-0 m-0">
 	<a {href} class="no-underline {getNavlinkColor(isRootPath)}"><slot /></a>
 </li>
