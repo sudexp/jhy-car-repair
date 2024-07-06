@@ -5,7 +5,7 @@
 </script>
 
 {#if isRootPath}
-	<div class="text-secondary">
+	<div class="text-base-100">
 		<LogoSvg />
 	</div>
 {:else}
