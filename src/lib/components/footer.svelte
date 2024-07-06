@@ -1,6 +1,7 @@
 <script>
 	import Logo from './logo.svelte';
 	import FooterTitle from './footertitle.svelte';
+	import Footerlink from './footerlink.svelte';
 </script>
 
 <footer class="sm:grid columns-template bg-base-200 p-8">
@@ -8,15 +9,17 @@
 	<div class="sm:justify-self-end">
 		<div class="grid columns-template gap-4">
 			<FooterTitle>Osoite:</FooterTitle>
-			<a href="/contacts">Kuormaajantie 6, 40320, Jyväskylä</a>
+			<Footerlink href="/contacts">Kuormaajantie 6, 40320, Jyväskylä</Footerlink>
 			<FooterTitle>Puhelinnumero:</FooterTitle>
-			<a href="/contacts">0452393591</a>
+			<Footerlink href="tel:0452393591">0452393591</Footerlink>
 			<FooterTitle>Sähköposti:</FooterTitle>
-			<a href="/contacts">huoltoykkoset@gmail.com</a>
+			<Footerlink href="mailto:huoltoykkoset@gmail.com">huoltoykkoset@gmail.com</Footerlink>
 			<FooterTitle>Laskut:</FooterTitle>
-			<a href="/contacts">huoltoykkoset.laskutus@gmail.com</a>
+			<Footerlink href="mailto:huoltoykkoset.laskutus@gmail.com"
+				>huoltoykkoset.laskutus@gmail.com</Footerlink
+			>
 			<FooterTitle>Y-tunnus:</FooterTitle>
-			<a href="/contacts">3422467-8</a>
+			<p class="p3 text-base-100">3422467-8</p>
 		</div>
 	</div>
 </footer>
