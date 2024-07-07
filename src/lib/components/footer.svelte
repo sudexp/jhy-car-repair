@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 	import Logo from './logo.svelte';
 	import FooterTitle from './footertitle.svelte';
 	import Footerlink from './footerlink.svelte';
 	import { getFooterBgColor } from '$lib/utils';
 
-	export let isRootPath;
+	export let isRootPath: boolean;
 </script>
 
 <footer class="flex-shrink-0 sm:grid columns-template bg-{getFooterBgColor(isRootPath)} p-8">

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import 'tailwindcss/tailwind.css';
 	import '../app.css';
 	import { page } from '$app/stores';
@@ -7,7 +7,7 @@
 	import bgImage from '$lib/jpg/bgImage.avif';
 	import { getIsRootPath, getLayoutBgStyle } from '$lib/utils';
 
-	let isRootPath;
+	let isRootPath: boolean;
 
 	$: isRootPath = getIsRootPath($page.url.pathname);
 </script>
