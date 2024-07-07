@@ -1,5 +1,5 @@
 <script lang="ts">
-	import LogoSvg from '$lib/svg/logoSvg.svelte';
+	import LogoSvg from '$lib/images/svg/logoSvg.svelte';
 	import { getDrawerLogoColor } from '$lib/utils';
 
 	export let isRootPath: boolean;

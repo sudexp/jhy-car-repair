@@ -1,5 +1,5 @@
 <script lang="ts">
-	import PhoneSvg from '$lib/svg/phoneIcon.svelte';
+	import PhoneSvg from '$lib/images/svg/phoneIcon.svelte';
 </script>
 
 <div class="text-neutral">

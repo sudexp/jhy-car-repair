@@ -2,7 +2,7 @@
 	import { getMenuIconColor, navItems } from '../utils';
 	import Logo from './logo.svelte';
 	import Navlink from './navlink.svelte';
-	import MenuIcon from '$lib/svg/menuIcon.svelte';
+	import MenuIcon from '$lib/images/svg/menuIcon.svelte';
 
 	export let isRootPath: boolean;
 </script>
