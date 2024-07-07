@@ -25,7 +25,14 @@
 		@apply flex items-center justify-center;
 	}
 
-	.layout-spacing {
+	.main-spacing {
 		@apply px-3 md:px-9 lg:px-40 xl:px-52;
+	}
+	.navbar-spacing {
+		@apply main-spacing sm:mb-6;
+	}
+
+	.footer-spacing {
+		@apply main-spacing py-8;
 	}
 }

@@ -8,7 +8,7 @@
 </script>
 
 <footer
-	class="flex-shrink-0 sm:grid columns-template {getFooterBgColor(isRootPath)} layout-spacing py-8"
+	class="flex-shrink-0 sm:grid columns-template {getFooterBgColor(isRootPath)} footer-spacing"
 >
 	<aside class="mb-4 sm:mb-0"><Logo {isRootPath} /></aside>
 	<div class="sm:justify-self-end">

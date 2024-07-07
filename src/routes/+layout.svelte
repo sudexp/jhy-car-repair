@@ -15,7 +15,7 @@
 <!-- FIXME: md: px-40 is 160px, reqired is 156px; lg: px-52 is 208px, reqired is 204px, -->
 <div class="flex flex-col min-h-screen" style={getLayoutBgStyle(isRootPath, bgImage)}>
 	<Navbar {isRootPath} />
-	<main class="flex-grow layout-spacing">
+	<main class="flex-grow main-spacing">
 		<slot />
 	</main>
 	<Footer {isRootPath} />
