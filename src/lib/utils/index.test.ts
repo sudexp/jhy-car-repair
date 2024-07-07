@@ -4,7 +4,8 @@ import {
 	getFooterBgColor,
 	getLayoutBgStyle,
 	getNavlinkColor,
-	getDrawerLogoColor
+	getDrawerLogoColor,
+	getMenuIconColor
 } from '.';
 
 describe('getIsRootPath', () => {
@@ -82,5 +83,17 @@ describe('getDrawerLogoColor', () => {
 	it('should return "text-base-100" when isDrawer is undefined', () => {
 		const result = getDrawerLogoColor(undefined);
 		expect(result).toBe('text-base-100');
+	});
+});
+
+describe('getMenuIconColor', () => {
+	it('should return "text-base-100" when isRootPath is true', () => {
+		const result = getMenuIconColor(true);
+		expect(result).toBe('text-base-100');
+	});
+
+	it('should return "text-secondary" when isRootPath is false', () => {
+		const result = getMenuIconColor(false);
+		expect(result).toBe('text-secondary');
 	});
 });

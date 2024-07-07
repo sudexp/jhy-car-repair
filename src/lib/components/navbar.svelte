@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { navItems } from '../utils';
+	import { getMenuIconColor, navItems } from '../utils';
 	import Logo from './logo.svelte';
 	import Navlink from './navlink.svelte';
 	import MenuIcon from '$lib/svg/menuIcon.svelte';
@@ -12,7 +12,11 @@
 	<div class="drawer-content flex flex-col">
 		<div class="navbar w-full p-0">
 			<div class="flex-none sm:hidden">
-				<label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+				<label
+					for="my-drawer-3"
+					aria-label="open sidebar"
+					class="btn btn-square btn-ghost {getMenuIconColor(isRootPath)}"
+				>
 					<MenuIcon />
 				</label>
 			</div>
