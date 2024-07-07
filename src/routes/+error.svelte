@@ -9,6 +9,6 @@
 			{$page.error?.message}
 		</h2>
 		<p class="p2">Valitettavasti emme löydä tätä sivua.</p>
-		<a href="/" class="no-underline p1 text-secondary">Etusivulle</a>
+		<a href="/" class="p1 text-secondary">Etusivulle</a>
 	</div>
 </div>
