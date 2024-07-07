@@ -1,7 +1,7 @@
 <script>
 	import LogoSvg from '$lib/svg/logoImage.svelte';
 
-	export let isRootPath;
+	export let isRootPath = undefined;
 </script>
 
 {#if isRootPath}
