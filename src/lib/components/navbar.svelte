@@ -37,7 +37,7 @@
 				<Logo {isRootPath} isDrawer={true} />
 			</div>
 			<hr class="m-0" />
-			<ul class="px-0 py-2 m-0">
+			<ul class="px-0 py-2">
 				{#each navItems as item}
 					<Navlink href={item.href}>{item.name}</Navlink>
 				{/each}
