@@ -4,7 +4,7 @@
 	import { page } from '$app/stores';
 	import Navbar from '$lib/components/navbar.svelte';
 	import Footer from '$lib/components/footer.svelte';
-	import bgImage from '$lib/jpg/bgImage.avif';
+	import bgImage from '$lib/avif/bgImage.avif';
 	import { getIsRootPath, getLayoutBgStyle } from '$lib/utils';
 
 	let isRootPath: boolean;
