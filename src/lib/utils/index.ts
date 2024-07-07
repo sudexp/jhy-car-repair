@@ -37,3 +37,7 @@ export const getDrawerLogoColor = (
 export const getMenuIconColor = (isRootPath: boolean): 'text-base-100' | 'text-secondary' => {
 	return isRootPath ? 'text-base-100' : 'text-secondary';
 };
+
+export const getNavlinkIsSelected = (isSelected: boolean): 'p3b' | 'p3' => {
+	return isSelected ? 'p3b' : 'p3';
+};

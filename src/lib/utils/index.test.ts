@@ -5,7 +5,8 @@ import {
 	getLayoutBgStyle,
 	getNavlinkColor,
 	getDrawerLogoColor,
-	getMenuIconColor
+	getMenuIconColor,
+	getNavlinkIsSelected
 } from '.';
 
 describe('getIsRootPath', () => {
@@ -95,5 +96,15 @@ describe('getMenuIconColor', () => {
 	it('should return "text-secondary" when isRootPath is false', () => {
 		const result = getMenuIconColor(false);
 		expect(result).toBe('text-secondary');
+	});
+});
+
+describe('getNavlinkIsSelected', () => {
+	it('returns "p3b" when isSelected is true', () => {
+		expect(getNavlinkIsSelected(true)).toBe('p3b');
+	});
+
+	it('returns "p3" when isSelected is false', () => {
+		expect(getNavlinkIsSelected(false)).toBe('p3');
 	});
 });
