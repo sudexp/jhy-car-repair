@@ -20,7 +20,7 @@
 					<MenuIcon />
 				</label>
 			</div>
-			<div class="hidden mx-2 flex-1 px-2 sm:block"><Logo {isRootPath} /></div>
+			<div class="hidden flex-1 sm:block"><Logo {isRootPath} /></div>
 			<div class="hidden flex-none sm:block">
 				<ul class="menu menu-horizontal m-0 p-0">
 					{#each navItems as item}
