@@ -2,7 +2,7 @@
 	import PhoneSvg from '$lib/images/svg/phoneIcon.svelte';
 </script>
 
-<!-- TODO: fix full height -->
+<!-- FIXME:fix full height -->
 <div class="flex flex-col justify-between h-full min-h-full space-y-4 text-neutral">
 	<div class="space-y-4">
 		<div class="space-y-2">
