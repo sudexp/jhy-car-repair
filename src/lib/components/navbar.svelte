@@ -34,6 +34,7 @@
 		<label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay" />
 		<div class="menu bg-base-100 min-h-full w-80 p-0">
 			<Logo {isRootPath} isDrawer={true} />
+			<hr class="m-0" />
 			<ul class="p-4 m-0">
 				{#each navItems as item}
 					<Navlink href={item.href}>{item.name}</Navlink>
