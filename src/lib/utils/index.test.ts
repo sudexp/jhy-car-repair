@@ -1,5 +1,11 @@
 import { describe, it, expect } from 'vitest';
-import { getIsRootPath, getFooterBgColor, getLayoutBgStyle, getNavlinkColor } from '.';
+import {
+	getIsRootPath,
+	getFooterBgColor,
+	getLayoutBgStyle,
+	getNavlinkColor,
+	getDrawerLogoColor
+} from '.';
 
 describe('getIsRootPath', () => {
 	it('should return true when pathname is exactly "/"', () => {
@@ -59,5 +65,22 @@ describe('getNavlinkColor', () => {
 	it('should return "text-secondary" when isRootPath is false', () => {
 		const result = getNavlinkColor(false);
 		expect(result).toBe('text-secondary');
+	});
+});
+
+describe('getDrawerLogoColor', () => {
+	it('should return "text-secondary" when isDrawer is true', () => {
+		const result = getDrawerLogoColor(true);
+		expect(result).toBe('text-secondary');
+	});
+
+	it('should return "text-base-100" when isDrawer is false', () => {
+		const result = getDrawerLogoColor(false);
+		expect(result).toBe('text-base-100');
+	});
+
+	it('should return "text-base-100" when isDrawer is undefined', () => {
+		const result = getDrawerLogoColor(undefined);
+		expect(result).toBe('text-base-100');
 	});
 });

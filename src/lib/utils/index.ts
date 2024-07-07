@@ -27,3 +27,7 @@ export const getNavlinkColor = (
 
 	return isRootPath ? 'text-neutral' : 'text-secondary';
 };
+
+export const getDrawerLogoColor = (isDrawer: boolean | undefined) => {
+	return isDrawer ? 'text-secondary' : 'text-base-100';
+};
