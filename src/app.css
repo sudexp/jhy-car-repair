@@ -32,6 +32,6 @@
 	}
 
 	.footer-spacing {
-		@apply main-spacing py-8;
+		@apply main-spacing py-4 md:py-8;
 	}
 }
