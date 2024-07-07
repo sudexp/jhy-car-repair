@@ -21,4 +21,7 @@
 	.p3b {
 		@apply text-sm md:text-base font-semibold;
 	}
+	.flex-center {
+		@apply flex items-center justify-center;
+	}
 }
