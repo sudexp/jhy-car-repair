@@ -6,5 +6,5 @@
 </script>
 
 <li class="p-0 m-0">
-	<a {href} class="no-underline {getNavlinkColor(isRootPath)}"><slot /></a>
+	<a {href} class="p3 no-underline {getNavlinkColor(isRootPath)}"><slot /></a>
 </li>
