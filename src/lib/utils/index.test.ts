@@ -30,11 +30,11 @@ describe('getIsRootPath', () => {
 
 describe('getFooterBgColor', () => {
 	it('should return "transparent" if isRootPath is true', () => {
-		expect(getFooterBgColor(true)).toBe('transparent');
+		expect(getFooterBgColor(true)).toBe('bg-transparent');
 	});
 
 	it('should return dark grey color if isRootPath is false', () => {
-		expect(getFooterBgColor(false)).toBe('base-200');
+		expect(getFooterBgColor(false)).toBe('bg-base-200');
 	});
 });
 
