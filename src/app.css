@@ -24,7 +24,6 @@
 	.flex-center {
 		@apply flex items-center justify-center;
 	}
-
 	.main-spacing {
 		@apply px-3 md:px-9 lg:px-40 xl:px-52;
 	}
