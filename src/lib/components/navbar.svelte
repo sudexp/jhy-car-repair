@@ -7,7 +7,7 @@
 	export let isRootPath: boolean;
 </script>
 
-<div class="drawer">
+<div class="drawer sm:mb-6">
 	<input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content flex flex-col">
 		<div class="navbar w-full p-0">
