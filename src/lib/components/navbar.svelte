@@ -21,7 +21,7 @@
 				</label>
 			</div>
 			<div class="hidden flex-1 sm:block"><Logo {isRootPath} /></div>
-			<div class="hidden flex-none sm:block">
+			<div class="hidden flex-none sm:block sm:-mr-2">
 				<ul class="menu menu-horizontal m-0 p-0">
 					{#each navItems as item}
 						<Navlink {isRootPath} href={item.href}>{item.name}</Navlink>
