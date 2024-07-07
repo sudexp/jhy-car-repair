@@ -4,6 +4,7 @@
 
 <div class="text-neutral">
 	<h1 class="text-neutral">JYVÄSKYLÄN HUOLTOYKKÖSET</h1>
+	<hr class="m-0 bg-neutral" />
 	<p class="p2">Luottamuksellinen autonhuollon kumppanisi!</p>
 	<p class="p2">
 		Tervetuloa paremman autohuollon asiakkaaksi. Tarjoamme teille korkealaatuisia autonhuollon
