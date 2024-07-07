@@ -28,10 +28,12 @@ export const getNavlinkColor = (
 	return isRootPath ? 'text-neutral' : 'text-secondary';
 };
 
-export const getDrawerLogoColor = (isDrawer: boolean | undefined) => {
+export const getDrawerLogoColor = (
+	isDrawer: boolean | undefined
+): 'text-secondary' | 'text-base-100' => {
 	return isDrawer ? 'text-secondary' : 'text-base-100';
 };
 
-export const getMenuIconColor = (isRootPath: boolean) => {
+export const getMenuIconColor = (isRootPath: boolean): 'text-base-100' | 'text-secondary' => {
 	return isRootPath ? 'text-base-100' : 'text-secondary';
 };
