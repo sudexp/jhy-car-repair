@@ -2,4 +2,4 @@
 	export let href: string;
 </script>
 
-<p><a {href} class="p3 text-base-100 no-underline"><slot /></a></p>
+<p><a {href} class="text-regular-3 text-base-100 no-underline"><slot /></a></p>

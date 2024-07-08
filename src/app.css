@@ -3,22 +3,22 @@
 @tailwind utilities;
 
 @layer utilities {
-	.p1 {
+	.text-regular-1 {
 		@apply text-xl md:text-2xl font-normal;
 	}
-	.p1b {
+	.text-bold-1 {
 		@apply text-xl md:text-2xl font-semibold;
 	}
-	.p2 {
+	.text-regular-2 {
 		@apply text-base md:text-xl font-normal;
 	}
-	.p2b {
+	.text-bold-2 {
 		@apply text-base md:text-xl font-semibold;
 	}
-	.p3 {
+	.text-regular-3 {
 		@apply text-sm md:text-base font-normal;
 	}
-	.p3b {
+	.text-bold-3 {
 		@apply text-sm md:text-base font-semibold;
 	}
 	.flex-center {

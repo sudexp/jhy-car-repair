@@ -100,11 +100,11 @@ describe('getMenuIconColor', () => {
 });
 
 describe('getNavlinkIsSelected', () => {
-	it('returns "p3b" when isSelected is true', () => {
-		expect(getNavlinkIsSelected(true)).toBe('p3b');
+	it('returns "text-bold-3" when isSelected is true', () => {
+		expect(getNavlinkIsSelected(true)).toBe('text-bold-3');
 	});
 
-	it('returns "p3" when isSelected is false', () => {
-		expect(getNavlinkIsSelected(false)).toBe('p3');
+	it('returns "text-regular-3" when isSelected is false', () => {
+		expect(getNavlinkIsSelected(false)).toBe('text-regular-3');
 	});
 });

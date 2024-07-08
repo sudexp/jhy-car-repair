@@ -38,6 +38,6 @@ export const getMenuIconColor = (isRootPath: boolean): 'text-base-100' | 'text-s
 	return isRootPath ? 'text-base-100' : 'text-secondary';
 };
 
-export const getNavlinkIsSelected = (isSelected: boolean): 'p3b' | 'p3' => {
-	return isSelected ? 'p3b' : 'p3';
+export const getNavlinkIsSelected = (isSelected: boolean): 'text-bold-3' | 'text-regular-3' => {
+	return isSelected ? 'text-bold-3' : 'text-regular-3';
 };

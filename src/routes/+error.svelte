@@ -8,7 +8,7 @@
 			{$page.status}
 			{$page.error?.message}
 		</h2>
-		<p class="p2">Valitettavasti emme löydä tätä sivua.</p>
-		<a href="/" class="p1 text-secondary">Etusivulle</a>
+		<p class="text-regular-2">Valitettavasti emme löydä tätä sivua.</p>
+		<a href="/" class="text-regular-1 text-secondary">Etusivulle</a>
 	</div>
 </div>

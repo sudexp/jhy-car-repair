@@ -24,7 +24,7 @@
 				>huoltoykkoset.laskutus@gmail.com</Footerlink
 			>
 			<FooterTitle>Y-tunnus:</FooterTitle>
-			<p class="p3 text-base-100">3422467-8</p>
+			<p class="text-regular-3 text-base-100">3422467-8</p>
 		</div>
 	</div>
 </footer>

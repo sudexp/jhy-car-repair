@@ -13,7 +13,8 @@
 <li class="p-0 m-0">
 	<a
 		{href}
-		class="{isSelected ? 'p3b' : 'p3'} no-underline py-1.5 px-2 {getNavlinkColor(isRootPath)}"
-		><slot /></a
+		class="{isSelected
+			? 'text-bold-3'
+			: 'text-regular-3'} no-underline py-1.5 px-2 {getNavlinkColor(isRootPath)}"><slot /></a
 	>
 </li>
