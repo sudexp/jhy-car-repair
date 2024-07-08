@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	body {
+		/* https://tailwindcss.com/docs/font-smoothing */
+		@apply antialiased;
+	}
+}
+
 @layer utilities {
 	.text-regular-1 {
 		@apply text-xl md:text-2xl font-normal;
