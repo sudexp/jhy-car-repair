@@ -3,7 +3,7 @@
 </script>
 
 <!-- FIXME:fix full height -->
-<div class="flex flex-col justify-between h-full min-h-full space-y-4 text-neutral">
+<div class="flex flex-col justify-between space-y-4 text-neutral">
 	<div class="space-y-4">
 		<div class="space-y-2">
 			<h1 class="text-neutral">JYVÄSKYLÄN HUOLTOYKKÖSET</h1>
