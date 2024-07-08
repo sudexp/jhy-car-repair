@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 </script>
 
-<div class="flex-center">
+<div class="flex-center flex-auto">
 	<div class="flex-center flex-col">
 		<h2>
 			{$page.status}
