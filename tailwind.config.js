@@ -3,7 +3,7 @@ export default {
 	content: ['./src/**/*.{html,svelte,js,ts}'],
 	theme: {
 		fontFamily: {
-			sans: ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+			sans: ['Helvetica', 'Arial', 'sans-serif']
 		},
 		fontSize: {
 			sm: '14px',
