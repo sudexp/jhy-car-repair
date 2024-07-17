@@ -12,7 +12,7 @@
 			<p class="text-bold-3">Palvelumme sisältää:</p>
 		</div>
 	</div>
-	<div class="grid grid-cols-2 gap-6 sm:grid-cols-1">
+	<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
 		<div>Qwert</div>
 		<div>Qwert</div>
 		<div>Qwert</div>
