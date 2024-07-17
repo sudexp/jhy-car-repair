@@ -4,6 +4,14 @@
 
 	export let isRootPath: boolean;
 	export let isDrawer: boolean | undefined = false;
+
+	const handleClick = () => {
+		const drawerLabel = document.getElementById('my-drawer-3');
+
+		if (drawerLabel && isDrawer) {
+			drawerLabel.click();
+		}
+	};
 </script>
 
 {#if isRootPath}
@@ -11,7 +19,7 @@
 		<LogoSvg />
 	</div>
 {:else}
-	<a href="/" class="text-secondary">
+	<a href="/" class="text-secondary" on:click={handleClick}>
 		<LogoSvg />
 	</a>
 {/if}
