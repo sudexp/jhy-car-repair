@@ -7,17 +7,9 @@
 
 	const handleClick = () => {
 		const drawerLabel: HTMLElement | null = document.getElementById('my-drawer-3');
-		const drawerSide: HTMLElement | null = document.querySelector(
-			'.drawer-side > *:not(.drawer-overlay)'
-		);
 
 		if (drawerLabel && isDrawer) {
 			drawerLabel.click();
-			drawerLabel.style.transitionDuration = '0ms';
-		}
-
-		if (drawerSide && isDrawer) {
-			drawerSide.style.transitionDuration = '0ms';
 		}
 	};
 </script>
