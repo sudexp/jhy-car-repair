@@ -15,7 +15,7 @@
 	</div>
 	<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
 		<div class="space-y-2">
-			<img src={wheelsImg} alt="Rengasmyynti" />
+			<img src={wheelsImg} alt="Rengasmyynti" class="m-0" />
 			<div class="space-y-2">
 				<p class="text-regular-2">RENGASMYYNTI</p>
 				<p class="text-regular-3">
@@ -25,7 +25,17 @@
 			</div>
 		</div>
 		<div class="space-y-2">
-			<img src={hotelImg} alt="Rengasmyynti" />
+			<div class="relative">
+				<img src={hotelImg} alt="Rengasmyynti" class="m-0" />
+				<a
+					href="https://www.freepik.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="absolute bottom-0 right-0 no-underline"
+				>
+					designed by fxquadro - Freepik.com
+				</a>
+			</div>
 			<div class="space-y-2">
 				<p class="text-regular-2">RENGASHOTELLI</p>
 				<p class="text-regular-3">
