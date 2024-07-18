@@ -1,8 +1,11 @@
 <script lang="ts">
 	import Leaflet from '$lib/map/leaflet.svelte';
+	import Marker from '$lib/map/marker.svelte';
 	import type { LatLngExpression } from 'leaflet';
+	import LeafletMarker from '$lib/images/svg/leafletMarker.svelte';
 
 	const initialView: LatLngExpression = [62.275079586373295, 25.78202303900985];
+	const markerPosition: LatLngExpression = [62.27532697658108, 25.783267621046065];
 </script>
 
 <div class="space-y-6">
@@ -31,7 +34,11 @@
 			Löydä meidät helposti Seppälänkankaalta! Sijaintimme tekee meistä täydellisen valinnan sekä
 			koti- että työmatkailijoille, jotka etsivät korkealaatuisia autonhuollon palveluita läheltä.
 		</p>
-		<Leaflet view={initialView} zoom={13} />
+		<Leaflet view={initialView} zoom={13}>
+			<Marker latLng={markerPosition} width={40} height={40}>
+				<LeafletMarker />
+			</Marker>
+		</Leaflet>
 		<p class="text-regular-3">
 			Odottamme sinua <b>Jyväskylän Huoltoykköset</b> korjaamossa Seppäänkankaalla.
 		</p>
