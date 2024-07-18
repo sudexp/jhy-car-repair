@@ -1,3 +1,8 @@
+<script lang="ts">
+	import wheelsImg from '$lib/images/avif/wheels.avif';
+	import hotelImg from '$lib/images/avif/hotel.avif';
+</script>
+
 <div class="space-y-6">
 	<h2>RENGASMYYNTI JA RENGASHOTELLI</h2>
 	<div class="space-y-4">
@@ -10,7 +15,7 @@
 	</div>
 	<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
 		<div class="space-y-2">
-			<div>Image 1 here</div>
+			<img src={wheelsImg} alt="Rengasmyynti" />
 			<div class="space-y-2">
 				<p class="text-regular-2">RENGASMYYNTI</p>
 				<p class="text-regular-3">
@@ -20,7 +25,7 @@
 			</div>
 		</div>
 		<div class="space-y-2">
-			<div>Image 2 here</div>
+			<img src={hotelImg} alt="Rengasmyynti" />
 			<div class="space-y-2">
 				<p class="text-regular-2">RENGASHOTELLI</p>
 				<p class="text-regular-3">
