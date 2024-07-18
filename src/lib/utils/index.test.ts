@@ -7,7 +7,9 @@ import {
 	getNavlinkColor,
 	getDrawerLogoColor,
 	getMenuIconColor,
-	getNavlinkIsSelected
+	getNavlinkIsSelected,
+	getNavlinkPy,
+	getNavlinkPx
 } from '.';
 
 describe('getIsRootPath', () => {
@@ -117,5 +119,39 @@ describe('getNavlinkIsSelected', () => {
 
 	it('returns "text-regular-3" when isSelected is false', () => {
 		expect(getNavlinkIsSelected(false)).toBe('text-regular-3');
+	});
+});
+
+describe('getNavlinkPy', () => {
+	it('returns py-3 when isDrawer is true', () => {
+		const result = getNavlinkPy(true);
+		expect(result).toBe('py-3');
+	});
+
+	it('returns py-2 when isDrawer is false', () => {
+		const result = getNavlinkPy(false);
+		expect(result).toBe('py-2');
+	});
+
+	it('returns py-2 when isDrawer is undefined', () => {
+		const result = getNavlinkPy(undefined);
+		expect(result).toBe('py-2');
+	});
+});
+
+describe('getNavlinkPx', () => {
+	it('returns px-4 when isDrawer is true', () => {
+		const result = getNavlinkPx(true);
+		expect(result).toBe('px-4');
+	});
+
+	it('returns py-2 when isDrawer is false', () => {
+		const result = getNavlinkPx(false);
+		expect(result).toBe('px-2');
+	});
+
+	it('returns py-2 when isDrawer is undefined', () => {
+		const result = getNavlinkPx(undefined);
+		expect(result).toBe('px-2');
 	});
 });

@@ -47,3 +47,11 @@ export const getMenuIconColor = (isRootPath: boolean): 'text-base-100' | 'text-s
 export const getNavlinkIsSelected = (isSelected: boolean): 'text-bold-3' | 'text-regular-3' => {
 	return isSelected ? 'text-bold-3' : 'text-regular-3';
 };
+
+export const getNavlinkPy = (isDrawer: boolean | undefined): 'py-3' | 'py-2' => {
+	return isDrawer ? 'py-3' : 'py-2';
+};
+
+export const getNavlinkPx = (isDrawer: boolean | undefined): 'px-4' | 'px-2' => {
+	return isDrawer ? 'px-4' : 'px-2';
+};

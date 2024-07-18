@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { getNavlinkColor, getNavlinkIsSelected } from '$lib/utils';
+	import { getNavlinkColor, getNavlinkIsSelected, getNavlinkPx, getNavlinkPy } from '$lib/utils';
 
-	export let isRootPath: boolean | undefined = undefined; // undefined is used for drawer links
+	export let isRootPath: boolean | undefined = undefined;
+	export let isDrawer: boolean | undefined = undefined;
 	export let href: string;
 
 	let isSelected: boolean;
@@ -13,8 +14,8 @@
 <li class="p-0 m-0">
 	<a
 		{href}
-		class="{getNavlinkIsSelected(isSelected)} no-underline py-1.5 px-2 {getNavlinkColor(
-			isRootPath
-		)}"><slot /></a
+		class="no-underline {getNavlinkIsSelected(isSelected)} {getNavlinkPy(isDrawer)} {getNavlinkPx(
+			isDrawer
+		)} {getNavlinkColor(isRootPath)}"><slot /></a
 	>
 </li>
