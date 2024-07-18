@@ -15,7 +15,7 @@
 				<label
 					for="my-drawer-3"
 					aria-label="open sidebar"
-					class="btn btn-square btn-ghost {getMenuIconColor(isRootPath)}"
+					class="btn btn-circle btn-ghost {getMenuIconColor(isRootPath)}"
 				>
 					<MenuIcon />
 				</label>
