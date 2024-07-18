@@ -24,5 +24,9 @@
 			Löydä meidät helposti Seppälänkankaalta! Sijaintimme tekee meistä täydellisen valinnan sekä
 			koti- että työmatkailijoille, jotka etsivät korkealaatuisia autonhuollon palveluita läheltä.
 		</p>
+
+		<p class="text-regular-3">
+			Odottamme sinua <b>Jyväskylän Huoltoykköset</b> korjaamossa Seppäänkankaalla.
+		</p>
 	</div>
 </div>
