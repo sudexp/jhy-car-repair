@@ -12,6 +12,10 @@ export const getFooterBgColor = (isRootPath: boolean): 'bg-transparent' | 'bg-ba
 	return isRootPath ? 'bg-transparent' : 'bg-base-200';
 };
 
+export const getFooterMt = (isRootPath: boolean): 'mt-0' | 'mt-6' => {
+	return isRootPath ? 'mt-0' : 'mt-6';
+};
+
 export const getLayoutBgStyle = (isRootPath: boolean, bgImage: string): string => {
 	return isRootPath
 		? `background-image: url(${bgImage}); background-size: cover; background-position: center`

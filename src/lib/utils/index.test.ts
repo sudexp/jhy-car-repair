@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import {
 	getIsRootPath,
 	getFooterBgColor,
+	getFooterMt,
 	getLayoutBgStyle,
 	getNavlinkColor,
 	getDrawerLogoColor,
@@ -36,6 +37,16 @@ describe('getFooterBgColor', () => {
 
 	it('should return dark grey color if isRootPath is false', () => {
 		expect(getFooterBgColor(false)).toBe('bg-base-200');
+	});
+});
+
+describe('getFooterMt function', () => {
+	it('returns mt-0 when isRootPath is true', () => {
+		expect(getFooterMt(true)).toBe('mt-0');
+	});
+
+	it('returns mt-6 when isRootPath is false', () => {
+		expect(getFooterMt(false)).toBe('mt-6');
 	});
 });
 

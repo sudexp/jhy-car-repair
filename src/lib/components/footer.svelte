@@ -2,13 +2,15 @@
 	import Logo from './logo.svelte';
 	import FooterTitle from './footertitle.svelte';
 	import Footerlink from './footerlink.svelte';
-	import { getFooterBgColor } from '$lib/utils';
+	import { getFooterBgColor, getFooterMt } from '$lib/utils';
 
 	export let isRootPath: boolean;
 </script>
 
 <footer
-	class="flex-shrink-0 sm:grid columns-template {getFooterBgColor(isRootPath)} footer-spacing"
+	class="flex-shrink-0 sm:grid columns-template footer-spacing {getFooterBgColor(
+		isRootPath
+	)} {getFooterMt(isRootPath)}"
 >
 	<aside class="mb-4 sm:mb-0"><Logo {isRootPath} /></aside>
 	<div class="sm:justify-self-end">
