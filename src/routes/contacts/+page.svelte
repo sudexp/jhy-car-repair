@@ -1,8 +1,10 @@
 <script lang="ts">
 	import Leaflet from '$lib/map/leaflet.svelte';
 	import Marker from '$lib/map/marker.svelte';
+	import Popup from '$lib/map/popup.svelte';
+	import MarkerSvg from '$lib/images/svg/leafletMarker.svelte';
+
 	import type { LatLngExpression } from 'leaflet';
-	import LeafletMarker from '$lib/images/svg/leafletMarker.svelte';
 
 	const initialView: LatLngExpression = [62.275079586373295, 25.78202303900985];
 	const markerPosition: LatLngExpression = [62.27532697658108, 25.783267621046065];
@@ -36,7 +38,8 @@
 		</p>
 		<Leaflet view={initialView} zoom={13}>
 			<Marker latLng={markerPosition} width={40} height={40}>
-				<LeafletMarker />
+				<MarkerSvg />
+				<Popup>Jyväskylän Huoltoykköset</Popup>
 			</Marker>
 		</Leaflet>
 		<p class="text-regular-3">
