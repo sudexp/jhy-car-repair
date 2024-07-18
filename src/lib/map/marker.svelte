@@ -22,7 +22,8 @@
 			let icon = L.divIcon({
 				html: markerElement,
 				className: 'map-marker',
-				iconSize: L.point(width, height)
+				iconSize: L.point(width, height),
+				popupAnchor: [0, -17.5]
 			});
 			marker = L.marker(latLng, { icon }).addTo(map);
 		}
