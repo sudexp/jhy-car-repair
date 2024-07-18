@@ -11,22 +11,22 @@
 
 @layer utilities {
 	.text-regular-1 {
-		@apply text-xl md:text-2xl font-normal;
+		@apply text-xl md:text-2xl font-normal leading-8 md:leading-9;
 	}
 	.text-bold-1 {
-		@apply text-xl md:text-2xl font-semibold;
+		@apply text-xl md:text-2xl font-semibold leading-8 md:leading-9;
 	}
 	.text-regular-2 {
-		@apply text-base md:text-xl font-normal;
+		@apply text-base md:text-xl font-normal leading-6 md:leading-7;
 	}
 	.text-bold-2 {
-		@apply text-base md:text-xl font-semibold;
+		@apply text-base md:text-xl font-semibold leading-6 md:leading-7;
 	}
 	.text-regular-3 {
-		@apply text-sm md:text-base font-normal;
+		@apply text-sm md:text-base font-normal leading-4 md:leading-5;
 	}
 	.text-bold-3 {
-		@apply text-sm md:text-base font-semibold;
+		@apply text-sm md:text-base font-semibold leading-4 md:leading-5;
 	}
 	.flex-center {
 		@apply flex items-center justify-center;
@@ -37,7 +37,6 @@
 	.navbar-spacing {
 		@apply main-spacing sm:mb-6;
 	}
-
 	.footer-spacing {
 		@apply main-spacing py-4 md:py-8;
 	}
