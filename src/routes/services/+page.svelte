@@ -137,7 +137,7 @@
 	<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
 		{#each services as service (service.id)}
 			<div class="flex flex-row items-center space-x-5">
-				<div class="avatar">
+				<div class="avatar static">
 					<div class="w-10 rounded-full">
 						<svelte:component this={service.component} />
 					</div>
