@@ -1,4 +1,6 @@
-export const navItems = [
+import type { NavItem } from '$lib/interfaces';
+
+export const navItems: NavItem[] = [
 	{ name: 'PALVELUT', href: '/services' },
 	{ name: 'RENGASMYYNTI JA -HOTELLI', href: '/wheels' },
 	{ name: 'YHTEYSTIEDOT', href: '/contacts' }
