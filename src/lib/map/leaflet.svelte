@@ -17,7 +17,7 @@
 			throw new Error('Must set either bounds, or view and zoom.');
 		}
 
-		map = L.map(mapElement)
+		map = L.map(mapElement, { attributionControl: false })
 			// example to expose map events to parent components:
 			.on('zoom', (e) => dispatch('zoom', e))
 			.on('popupopen', async (e) => {
