@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount, onDestroy, setContext, createEventDispatcher, tick } from 'svelte';
-	import L from 'leaflet';
 	import 'leaflet/dist/leaflet.css';
 
 	export let bounds: L.LatLngBoundsExpression | undefined = undefined;
@@ -12,10 +11,12 @@
 	let map: L.Map | undefined;
 	let mapElement: HTMLElement;
 
-	onMount(() => {
+	onMount(async () => {
 		if (!bounds && (!view || !zoom)) {
 			throw new Error('Must set either bounds, or view and zoom.');
 		}
+
+		const L = await import('leaflet');
 
 		map = L.map(mapElement, { scrollWheelZoom: false, attributionControl: false })
 			// example to expose map events to parent components:

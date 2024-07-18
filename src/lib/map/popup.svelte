@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount, onDestroy, getContext } from 'svelte';
-	import L from 'leaflet';
 
 	let popup: L.Popup | undefined;
 	let popupElement: HTMLElement;
@@ -10,7 +9,9 @@
 	const { getLayer }: { getLayer: () => L.Layer | undefined } = getContext('layer');
 	const layer = getLayer();
 
-	onMount(() => {
+	onMount(async () => {
+		const L = await import('leaflet');
+
 		popup = L.popup().setContent(popupElement);
 
 		if (layer) {

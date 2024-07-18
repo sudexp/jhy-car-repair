@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount, onDestroy, getContext, setContext } from 'svelte';
-	import L from 'leaflet';
 
 	export let width: number;
 	export let height: number;
@@ -17,7 +16,9 @@
 		getLayer: () => marker
 	});
 
-	onMount(() => {
+	onMount(async () => {
+		const L = await import('leaflet');
+
 		if (map) {
 			let icon = L.divIcon({
 				html: markerElement,
