@@ -4,6 +4,9 @@
 	import Popup from '$lib/map/popup.svelte';
 	import MarkerSvg from '$lib/images/svg/leafletMarker.svelte';
 
+	import photo1 from '$lib/images/avif/photo1.avif';
+	import photo2 from '$lib/images/avif/photo2.avif';
+
 	import type { LatLngExpression } from 'leaflet';
 
 	const initialView: LatLngExpression = [62.275079586373295, 25.78202303900985];
@@ -30,8 +33,27 @@
 				>0452393591</a
 			> ja varaa aikaa.
 		</p>
-		<p class="text-bold-3">Meidän tiimimme:</p>
-
+		<div class="space-y-2">
+			<p class="text-bold-3">Meidän tiimimme:</p>
+			<div class="flex space-x-8">
+				<div class="flex flex-col items-center space-y-2">
+					<div class="avatar static">
+						<div class="w-36 rounded-full">
+							<img src={photo1} alt="Asentaja1" class="m-0" />
+						</div>
+					</div>
+					<p class="text-regular-2">Andrey</p>
+				</div>
+				<div class="flex flex-col items-center space-y-2">
+					<div class="avatar static">
+						<div class="w-36 rounded-full">
+							<img src={photo2} alt="Asentaja2" class="m-0" />
+						</div>
+					</div>
+					<p class="text-regular-2">Aaro</p>
+				</div>
+			</div>
+		</div>
 		<p class="text-regular-3">
 			Löydä meidät helposti Seppälänkankaalta! Sijaintimme tekee meistä täydellisen valinnan sekä
 			koti- että työmatkailijoille, jotka etsivät korkealaatuisia autonhuollon palveluita läheltä.
