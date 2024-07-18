@@ -146,4 +146,5 @@
 			</div>
 		{/each}
 	</div>
+	<p class="text-regular-3">… ja kaikki muu mahdollinen autosi hyvinvoinnin tueksi!</p>
 </div>
