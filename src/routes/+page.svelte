@@ -23,7 +23,7 @@
 			<p class="text-regular-2">Soita meille:</p>
 			<div class="text-regular-2 flex flex-row items-center space-x-2">
 				<PhoneSvg />
-				<p>040 123 4567</p>
+				<p class="text-bold-2">045 239 3591</p>
 			</div>
 		</div>
 	</div>
