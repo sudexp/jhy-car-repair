@@ -37,7 +37,7 @@
 			<p class="text-bold-3">Meidän tiimimme:</p>
 			<div class="flex space-x-8">
 				<div class="flex flex-col items-center space-y-2">
-					<div class="avatar static">
+					<div class="avatar">
 						<div class="w-36 rounded-full">
 							<img src={photo1} alt="Asentaja1" class="m-0" />
 						</div>
@@ -45,7 +45,7 @@
 					<p class="text-regular-2">Andrey</p>
 				</div>
 				<div class="flex flex-col items-center space-y-2">
-					<div class="avatar static">
+					<div class="avatar">
 						<div class="w-36 rounded-full">
 							<img src={photo2} alt="Asentaja2" class="m-0" />
 						</div>
