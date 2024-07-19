@@ -9,7 +9,8 @@ import {
 	getMenuIconColor,
 	getNavlinkIsSelected,
 	getNavlinkPy,
-	getNavlinkPx
+	getNavlinkPx,
+	getHoverRounded
 } from '.';
 
 describe('getIsRootPath', () => {
@@ -153,5 +154,22 @@ describe('getNavlinkPx', () => {
 	it('returns py-2 when isDrawer is undefined', () => {
 		const result = getNavlinkPx(undefined);
 		expect(result).toBe('px-2');
+	});
+});
+
+describe('getHoverRounded', () => {
+	it('returns hover:rounded-none when isDrawer is true', () => {
+		const result = getHoverRounded(true);
+		expect(result).toBe('hover:rounded-none');
+	});
+
+	it('returns empty string when isDrawer is false', () => {
+		const result = getHoverRounded(false);
+		expect(result).toBe('');
+	});
+
+	it('returns empty string when isDrawer is undefined', () => {
+		const result = getHoverRounded(undefined);
+		expect(result).toBe('');
 	});
 });

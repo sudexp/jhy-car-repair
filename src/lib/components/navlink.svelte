@@ -6,6 +6,7 @@
 		getNavlinkIsSelected,
 		getNavlinkPx,
 		getNavlinkPy,
+		getHoverRounded,
 		closeDrawerDispatchFunction
 	} from '$lib/utils';
 
@@ -24,7 +25,7 @@
 		{href}
 		class="no-underline {getNavlinkIsSelected(isSelected)} {getNavlinkPy(isDrawer)} {getNavlinkPx(
 			isDrawer
-		)} {getNavlinkColor(isRootPath)}"
+		)} {getNavlinkColor(isRootPath)} {getHoverRounded(isDrawer)}"
 		on:click={closeDrawerDispatchFunction(dispatch)}><slot /></a
 	>
 </li>

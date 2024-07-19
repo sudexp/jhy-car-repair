@@ -56,6 +56,10 @@ export const getNavlinkPx = (isDrawer: boolean | undefined): 'px-4' | 'px-2' => 
 	return isDrawer ? 'px-4' : 'px-2';
 };
 
+export const getHoverRounded = (isDrawer: boolean | undefined): 'hover:rounded-none' | '' => {
+	return isDrawer ? 'hover:rounded-none' : '';
+};
+
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const closeDrawerDispatchFunction = (dispatch: DispatchFunction) => (_: MouseEvent) => {
 	dispatch('closeDrawer');
