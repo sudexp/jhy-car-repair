@@ -1,4 +1,4 @@
-import type { NavItem } from '$lib/interfaces';
+import type { DispatchFunction, NavItem } from '$lib/interfaces';
 
 export const navItems: NavItem[] = [
 	{ name: 'PALVELUT', href: '/services' },
@@ -56,10 +56,7 @@ export const getNavlinkPx = (isDrawer: boolean | undefined): 'px-4' | 'px-2' => 
 	return isDrawer ? 'px-4' : 'px-2';
 };
 
-export const handleClick = (isDrawer: boolean | undefined) => () => {
-	const drawerLabel = document.getElementById('my-drawer-3');
-
-	if (drawerLabel && isDrawer) {
-		drawerLabel.click();
-	}
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const closeDrawerDispatchFunction = (dispatch: DispatchFunction) => (_: MouseEvent) => {
+	dispatch('closeDrawer');
 };

@@ -1,19 +1,21 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { createEventDispatcher } from 'svelte';
 	import {
 		getNavlinkColor,
 		getNavlinkIsSelected,
 		getNavlinkPx,
 		getNavlinkPy,
-		handleClick
+		closeDrawerDispatchFunction
 	} from '$lib/utils';
 
 	export let isRootPath: boolean | undefined = undefined;
 	export let isDrawer: boolean | undefined = undefined;
 	export let href: string;
 
-	let isSelected: boolean;
+	const dispatch = createEventDispatcher();
 
+	let isSelected: boolean;
 	$: isSelected = $page.url.pathname === href;
 </script>
 
@@ -23,6 +25,6 @@
 		class="no-underline {getNavlinkIsSelected(isSelected)} {getNavlinkPy(isDrawer)} {getNavlinkPx(
 			isDrawer
 		)} {getNavlinkColor(isRootPath)}"
-		on:click={handleClick(isDrawer)}><slot /></a
+		on:click={closeDrawerDispatchFunction(dispatch)}><slot /></a
 	>
 </li>
