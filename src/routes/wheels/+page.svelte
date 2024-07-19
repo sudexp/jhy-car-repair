@@ -25,7 +25,7 @@
 			</div>
 		</div>
 		<div class="space-y-2">
-			<div class="relative -z-10">
+			<div class="relative">
 				<img src={hotelImg} alt="Rengasmyynti" class="m-0" />
 				<a
 					href="https://www.freepik.com"
