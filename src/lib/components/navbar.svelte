@@ -20,7 +20,7 @@
 <div class="drawer navbar-spacing">
 	<input id="my-drawer-3" type="checkbox" class="drawer-toggle" bind:checked={isDrawerOpened} />
 	<div class="drawer-content flex flex-col">
-		<div class="navbar w-full p-0">
+		<div class="navbar w-full p-0 min-h-14 sm:min-h-16">
 			<div class="flex-none sm:hidden">
 				<button
 					aria-label="open sidebar"
