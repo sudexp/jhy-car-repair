@@ -69,35 +69,26 @@ describe('getLayoutBgStyle', () => {
 
 describe('getNavlinkColor', () => {
 	it('should return "text-accent" when isRootPath is undefined', () => {
-		const result = getNavlinkColor(undefined);
-		expect(result).toBe('text-accent');
+		expect(getNavlinkColor(undefined)).toBe('text-accent');
 	});
 
 	it('should return "text-neutral" when isRootPath is true', () => {
-		const result = getNavlinkColor(true);
-		expect(result).toBe('text-neutral');
+		expect(getNavlinkColor(true)).toBe('text-neutral');
 	});
 
 	it('should return "text-secondary" when isRootPath is false', () => {
-		const result = getNavlinkColor(false);
-		expect(result).toBe('text-secondary');
+		expect(getNavlinkColor(false)).toBe('text-secondary');
 	});
 });
 
 describe('getDrawerLogoColor', () => {
 	it('should return "text-secondary" when isDrawer is true', () => {
-		const result = getDrawerLogoColor(true);
-		expect(result).toBe('text-secondary');
+		expect(getDrawerLogoColor(true)).toBe('text-secondary');
 	});
 
-	it('should return "text-base-100" when isDrawer is false', () => {
-		const result = getDrawerLogoColor(false);
-		expect(result).toBe('text-base-100');
-	});
-
-	it('should return "text-base-100" when isDrawer is undefined', () => {
-		const result = getDrawerLogoColor(undefined);
-		expect(result).toBe('text-base-100');
+	it('should return "text-base-100" when isDrawer is false or undefined', () => {
+		expect(getDrawerLogoColor(false)).toBe('text-base-100');
+		expect(getDrawerLogoColor(undefined)).toBe('text-base-100');
 	});
 });
 
@@ -125,51 +116,33 @@ describe('getNavlinkIsSelected', () => {
 
 describe('getNavlinkPy', () => {
 	it('returns py-3 when isDrawer is true', () => {
-		const result = getNavlinkPy(true);
-		expect(result).toBe('py-3');
+		expect(getNavlinkPy(true)).toBe('py-3');
 	});
 
-	it('returns py-2 when isDrawer is false', () => {
-		const result = getNavlinkPy(false);
-		expect(result).toBe('py-2');
-	});
-
-	it('returns py-2 when isDrawer is undefined', () => {
-		const result = getNavlinkPy(undefined);
-		expect(result).toBe('py-2');
+	it('returns py-2 when isDrawer is false or undefined', () => {
+		expect(getNavlinkPy(false)).toBe('py-2');
+		expect(getNavlinkPy(undefined)).toBe('py-2');
 	});
 });
 
 describe('getNavlinkPx', () => {
 	it('returns px-4 when isDrawer is true', () => {
-		const result = getNavlinkPx(true);
-		expect(result).toBe('px-4');
+		expect(getNavlinkPx(true)).toBe('px-4');
 	});
 
-	it('returns py-2 when isDrawer is false', () => {
-		const result = getNavlinkPx(false);
-		expect(result).toBe('px-2');
-	});
-
-	it('returns py-2 when isDrawer is undefined', () => {
-		const result = getNavlinkPx(undefined);
-		expect(result).toBe('px-2');
+	it('returns py-2 when isDrawer is false or undefined', () => {
+		expect(getNavlinkPx(false)).toBe('px-2');
+		expect(getNavlinkPx(undefined)).toBe('px-2');
 	});
 });
 
 describe('getHoverRounded', () => {
 	it('returns hover:rounded-none when isDrawer is true', () => {
-		const result = getHoverRounded(true);
-		expect(result).toBe('hover:rounded-none');
+		expect(getHoverRounded(true)).toBe('hover:rounded-none');
 	});
 
-	it('returns empty string when isDrawer is false', () => {
-		const result = getHoverRounded(false);
-		expect(result).toBe('');
-	});
-
-	it('returns empty string when isDrawer is undefined', () => {
-		const result = getHoverRounded(undefined);
-		expect(result).toBe('');
+	it('returns empty string when isDrawer is false or undefined', () => {
+		expect(getHoverRounded(false)).toBe('');
+		expect(getHoverRounded(undefined)).toBe('');
 	});
 });
