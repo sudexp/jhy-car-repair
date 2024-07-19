@@ -9,8 +9,8 @@
 		closeDrawerDispatchFunction
 	} from '$lib/utils';
 
-	export let isRootPath: boolean | undefined = undefined;
-	export let isDrawer: boolean | undefined = undefined;
+	export let isRootPath: boolean | undefined = false;
+	export let isDrawer: boolean | undefined = false;
 	export let href: string;
 
 	const dispatch = createEventDispatcher();
