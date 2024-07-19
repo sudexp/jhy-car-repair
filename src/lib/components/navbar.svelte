@@ -42,7 +42,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="drawer-side">
+	<div class="drawer-side z-1000">
 		<label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay" />
 		<div class="menu bg-base-100 min-h-full w-80 p-0">
 			<div class="p-4">

@@ -12,6 +12,9 @@ export default {
 			'2xl': '22px'
 		},
 		extend: {
+			zIndex: {
+				1000: '1000'
+			},
 			typography: {
 				DEFAULT: {
 					css: {
