@@ -1,17 +1,9 @@
 <script lang="ts">
 	import LogoSvg from '$lib/images/svg/logoSvg.svelte';
-	import { getDrawerLogoColor } from '$lib/utils';
+	import { getDrawerLogoColor, handleClick } from '$lib/utils';
 
 	export let isRootPath: boolean;
 	export let isDrawer: boolean | undefined = false;
-
-	const handleClick = () => {
-		const drawerLabel: HTMLElement | null = document.getElementById('my-drawer-3');
-
-		if (drawerLabel && isDrawer) {
-			drawerLabel.click();
-		}
-	};
 </script>
 
 {#if isRootPath}
@@ -19,7 +11,7 @@
 		<LogoSvg />
 	</div>
 {:else}
-	<a href="/" class="text-secondary" on:click={handleClick}>
+	<a href="/" class="text-secondary" on:click={handleClick(isDrawer)}>
 		<LogoSvg />
 	</a>
 {/if}

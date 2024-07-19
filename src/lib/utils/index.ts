@@ -55,3 +55,11 @@ export const getNavlinkPy = (isDrawer: boolean | undefined): 'py-3' | 'py-2' => 
 export const getNavlinkPx = (isDrawer: boolean | undefined): 'px-4' | 'px-2' => {
 	return isDrawer ? 'px-4' : 'px-2';
 };
+
+export const handleClick = (isDrawer: boolean | undefined) => () => {
+	const drawerLabel = document.getElementById('my-drawer-3');
+
+	if (drawerLabel && isDrawer) {
+		drawerLabel.click();
+	}
+};
