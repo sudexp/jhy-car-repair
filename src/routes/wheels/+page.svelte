@@ -3,6 +3,10 @@
 	import hotelImg from '$lib/images/avif/hotel.avif';
 </script>
 
+<svelte:head>
+	<title>Jyväskylän Huoltoykköset - Rengasmyynti ja rengashotelli</title>
+	<meta name="description" content="Rengasmyynti ja rengashotelli Jyväskylä" />
+</svelte:head>
 <div class="space-y-6">
 	<h2>RENGASMYYNTI JA RENGASHOTELLI</h2>
 	<div class="space-y-4">

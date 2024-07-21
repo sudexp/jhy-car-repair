@@ -13,6 +13,10 @@
 	const markerPosition: LatLngExpression = [62.27532697658108, 25.783267621046065];
 </script>
 
+<svelte:head>
+	<title>Jyväskylän Huoltoykköset - Yhteystiedot</title>
+	<meta name="description" content="Jyväskylän Huoltoykköset autokorjaamo yhteystiedot" />
+</svelte:head>
 <div class="space-y-6">
 	<h2>YHTEYSTIEDOT</h2>
 	<div class="space-y-4">

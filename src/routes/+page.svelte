@@ -2,6 +2,13 @@
 	import PhoneSvg from '$lib/images/svg/phoneIcon.svelte';
 </script>
 
+<svelte:head>
+	<title>Jyväskylän Huoltoykköset - Etusivu</title>
+	<meta
+		name="description"
+		content="Jyväskylän Huoltoykköset: edullinen korjaamo Jyväskylä, autohuolto Jyväskylä, autopalvelu Jyväskylä"
+	/>
+</svelte:head>
 <div class="flex flex-col justify-between space-y-4 text-neutral">
 	<div class="space-y-4">
 		<div class="space-y-2">
