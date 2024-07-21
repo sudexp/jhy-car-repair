@@ -4,7 +4,9 @@
 </script>
 
 <svelte:head>
-	<title>Jyväskylän Huoltoykköset - Rengasmyynti ja rengashotelli</title>
+	<title
+		>Jyväskylän Huoltoykköset - Edullinen korjaamo Jyväskylässä, Rengasmyynti ja rengashotelli</title
+	>
 	<meta name="description" content="Rengasmyynti ja rengashotelli Jyväskylä" />
 </svelte:head>
 <div class="space-y-6">
