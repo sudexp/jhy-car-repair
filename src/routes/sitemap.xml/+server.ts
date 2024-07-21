@@ -1,5 +1,5 @@
-const pages = ['/', '/services', '/wheels', '/contacts'];
 const website = 'https://www.huoltoykkoset.fi';
+const pages = ['/', '/services', '/wheels', '/contacts'];
 
 export async function GET() {
 	return new Response(
