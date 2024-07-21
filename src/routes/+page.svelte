@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Jyväskylän Huoltoykköset - Etusivu</title>
+	<title>Jyväskylän Huoltoykköset - Edullinen korjaamo Jyväskylässä, Etusivu</title>
 	<meta
 		name="description"
 		content="Jyväskylän Huoltoykköset: edullinen korjaamo Jyväskylä, autohuolto Jyväskylä, autopalvelu Jyväskylä"

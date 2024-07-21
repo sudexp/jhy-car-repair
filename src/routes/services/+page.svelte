@@ -121,7 +121,7 @@
 </script>
 
 <svelte:head>
-	<title>Jyväskylän Huoltoykköset - Palvelut</title>
+	<title>Jyväskylän Huoltoykköset - Edullinen korjaamo Jyväskylässä, Palvelut</title>
 	<meta
 		name="description"
 		content="Kausisäilytys, henkilö- ja pakettiautojen kaikki huollot ja korjaukset, renkaiden tasapainotus ja 3D-suuntaus, määräaikaishuollot – autosi takuu säilyy, sisätilalämmittimet Jyväkylä, henkilöauton ja pakettiauton käynnistimet, akut, laturit Jyväkylä, Jakopää huollot- ja korjaukset, Ohjaus- ja jousitus työt, Polttoainejarjestelmien huollot sekä korjaukset, Voimansiirron huollot ja korjaukset, sijaisautot huollon tai korjauksen ajaksi, Ilmastointi huolto ja korjaus, vikadiagnostiikka ja raportointi, ruostevauriokorjaukset, päästömittaukset ja diagnostiikat, öljynvaihdot, jäähdytysjärjestelmän huollot- ja korjaukset, jarrujen huollot- ja korjaukset, pakokaasujärjestelmien korjaustyöt"
