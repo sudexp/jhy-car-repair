@@ -15,7 +15,10 @@
 
 <svelte:head>
 	<title>Jyväskylän Huoltoykköset - Edullinen korjaamo Jyväskylässä, Yhteystiedot</title>
-	<meta name="description" content="Jyväskylän Huoltoykköset autokorjaamo yhteystiedot" />
+	<meta
+		name="description"
+		content="Jyväskylän Huoltoykköset autokorjaamo yhteystiedot, Kuormaajantie 6, 40320, Jyväskylä, 0452393591"
+	/>
 </svelte:head>
 <div class="space-y-6">
 	<h2>YHTEYSTIEDOT</h2>
