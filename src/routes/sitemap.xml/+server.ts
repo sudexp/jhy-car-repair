@@ -19,7 +19,7 @@ export async function GET() {
 				.map(
 					(page) => `<url>
                       <loc>${website}${page}</loc>
-                      <changefreq>daily</changefreq>
+                      <changefreq>monthly</changefreq>
                       <priority>${getPriority(page)}</priority>
                     </url>`
 				)
