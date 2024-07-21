@@ -13,7 +13,7 @@ export default {
 		},
 		extend: {
 			zIndex: {
-				1000: '1000'
+				10000: '10000'
 			},
 			typography: {
 				DEFAULT: {
