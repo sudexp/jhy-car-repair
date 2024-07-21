@@ -6,7 +6,7 @@
 	<title>Jyväskylän Huoltoykköset - Edullinen korjaamo Jyväskylässä, Etusivu</title>
 	<meta
 		name="description"
-		content="Jyväskylän Huoltoykköset: edullinen korjaamo Jyväskylä, autohuolto Jyväskylä, autopalvelu Jyväskylä"
+		content="Jyväskylän Huoltoykköset: edullinen korjaamo Jyväskylä, autohuolto Jyväskylä, autopalvelu Jyväskylä, Rengasmyynti ja rengashotelli Jyväskylä"
 	/>
 </svelte:head>
 <div class="flex flex-col justify-between space-y-4 text-neutral">
