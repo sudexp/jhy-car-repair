@@ -10,7 +10,8 @@ import {
 	getNavlinkIsSelected,
 	getNavlinkPy,
 	getNavlinkPx,
-	getHoverRounded
+	getHoverRounded,
+	getPriority
 } from '.';
 
 describe('getIsRootPath', () => {
@@ -144,5 +145,17 @@ describe('getHoverRounded', () => {
 	it('returns empty string when isDrawer is false or undefined', () => {
 		expect(getHoverRounded(false)).toBe('');
 		expect(getHoverRounded(undefined)).toBe('');
+	});
+});
+
+describe('getPriority', () => {
+	it('returns "1.0" for the root page ("/")', () => {
+		expect(getPriority('/')).toBe('1.0');
+	});
+
+	it('returns "0.8" for any other page', () => {
+		expect(getPriority('/services')).toBe('0.8');
+		expect(getPriority('/wheels')).toBe('0.8');
+		expect(getPriority('/contacts')).toBe('0.8');
 	});
 });

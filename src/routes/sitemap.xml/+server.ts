@@ -1,3 +1,5 @@
+import { getPriority } from '$lib/utils';
+
 const website = 'https://www.huoltoykkoset.fi';
 const pages = ['/', '/services', '/wheels', '/contacts'];
 
@@ -18,7 +20,7 @@ export async function GET() {
 					(page) => `<url>
                       <loc>${website}${page}</loc>
                       <changefreq>daily</changefreq>
-                      <priority>0.7</priority>
+                      <priority>${getPriority(page)}</priority>
                     </url>`
 				)
 				.join('\n')}

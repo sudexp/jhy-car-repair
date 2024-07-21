@@ -64,3 +64,7 @@ export const getHoverRounded = (isDrawer: boolean | undefined): 'hover:rounded-n
 export const closeDrawerDispatchFunction = (dispatch: DispatchFunction) => (_: MouseEvent) => {
 	dispatch('closeDrawer');
 };
+
+export const getPriority = (page: string) => {
+	return page === '/' ? '1.0' : '0.8';
+};
